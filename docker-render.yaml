@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  renderer:
+    image: grafana/grafana-image-renderer:latest
+    ports:
+      - 8081
+    environment:
+      ENABLE_METRICS: 'true'
+    container_name: renderer
